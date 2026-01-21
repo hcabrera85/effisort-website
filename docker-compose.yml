@@ -5,9 +5,10 @@ services:
     image: nginx:alpine
     container_name: facturacion-rd
     ports:
-      - "8080:80"
+      - "80:80"
     volumes:
       - ./index.html:/usr/share/nginx/html/index.html
       - ./styles.css:/usr/share/nginx/html/styles.css
       - ./script.js:/usr/share/nginx/html/script.js
     restart: always
+
